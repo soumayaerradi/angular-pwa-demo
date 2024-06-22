@@ -1,0 +1,12 @@
+<div class="cocktail-list-container">
+  <h1>Cocktails</h1>
+
+  <div class="cocktail-list">
+    @for (cocktail of cocktails?.drinks; track cocktail.idDrink) {
+      <div class="cocktail-card" (click)="openCocktailDetail(cocktail.idDrink)">
+        <span>{{ cocktail.strDrink }}</span>
+        <img [src]="cocktail.strDrinkThumb"  [alt]="cocktail.strDrinkThumb"/>
+      </div>
+    }
+  </div>
+</div>

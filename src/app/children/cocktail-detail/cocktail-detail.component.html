@@ -1,0 +1,15 @@
+<div class="cocktail-detail-container">
+  <h1>Cocktail: {{ cocktail?.strDrink | uppercase }}</h1>
+
+  <div class="cocktail-detail">
+    <div class="cocktail-detail-image">
+      <img [src]="cocktail?.strDrinkThumb" alt="Cocktail Image" />
+    </div>
+    <div class="cocktail-detail-info">
+      <p><strong>Category:</strong> {{ cocktail?.strCategory }}</p>
+      <p><strong>Alcoholic:</strong> {{ cocktail?.strAlcoholic }}</p>
+      <p><strong>Glass:</strong> {{ cocktail?.strGlass }}</p>
+      <p><strong>Instructions:</strong> {{ cocktail?.strInstructions }}</p>
+    </div>
+  </div>
+</div>
